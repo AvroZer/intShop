@@ -1,0 +1,141 @@
+@import url('../../components/reset.css');
+
+button {
+    border-radius: 25px;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #03a9f4;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    padding: 40px 0;
+}
+
+.block {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+
+    border-radius: 25px;
+}
+
+.block__item {
+    width: 50%;
+}
+
+.blockItem {
+    text-align: center;
+}
+
+.blockItem__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.blockItem__btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: .2s ease-in;
+}
+
+.blockItem__btn:hover {
+    color: #fff;
+    background-color: #1680b0;
+}
+
+.blockItem__btn:active {
+    transform: scale(.95);
+}
+
+.form__box {
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+
+    transition: .5s ease-in-out;
+
+    overflow: hidden;
+}
+
+.form__box__left {
+    left: 50%;
+}
+
+.form__box__right {
+    left: 0%;
+}
+
+.form {
+    width: 100%;
+    padding: 50px;
+    font-size: 16px;
+
+    position: absolute;
+
+    transition: .5s;
+}
+
+.form__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #333;
+    font-size: inherit;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+.form__btn {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: #03a9f4;
+    color: #fff;
+    padding: 10px 50px;
+
+    transition: .1s ease-in-out;
+}
+
+.form__btn:hover {
+    background-color: #0285ff;
+}
+
+.form__btn:active {
+    transform: scale(.95);
+}

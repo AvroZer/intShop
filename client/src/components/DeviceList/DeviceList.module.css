@@ -1,0 +1,9 @@
+@import url('../reset.css');
+
+.cards {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}

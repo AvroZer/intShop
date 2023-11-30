@@ -1,0 +1,53 @@
+@import url('../reset.css');
+
+.dropdown {
+    position: relative;
+    margin: 200px;
+}
+
+.dropdown__drop {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5px 0;
+    width: 210px;
+    background-color: #bbbbbb;
+
+    transition: 150ms ease-in-out;
+    
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+}
+
+.dropdown__drop__active {
+    background-color: #818181;
+}
+
+.dropdown__drop::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 17px;
+
+    width: 10px;
+    height: 10px;
+    background-color: #bbbbbb;
+    transform: rotate(45deg);
+}
+
+.dropdown__item {
+    padding: 7px 20px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    cursor: pointer;
+
+    transition: 150ms ease-in-out;
+}
+
+.dropdown__item:hover {
+    background-color: #888383;
+    color: #c09393;
+}
